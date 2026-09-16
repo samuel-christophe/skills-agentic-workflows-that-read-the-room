@@ -1,6 +1,9 @@
 ---
 name: update-github-info
-on: daily
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * *"
 permissions:
   contents: read
   pull-requests: read
