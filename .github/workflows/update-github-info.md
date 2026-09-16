@@ -8,7 +8,6 @@ permissions:
   contents: read
   pull-requests: read
 engine: copilot
-model: gpt-5.4
 tools:
   edit:
   web-fetch:
