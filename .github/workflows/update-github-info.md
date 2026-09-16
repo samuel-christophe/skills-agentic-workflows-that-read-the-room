@@ -8,6 +8,7 @@ permissions:
   contents: read
   pull-requests: read
 engine: copilot
+model: gpt-5
 tools:
   edit:
   web-fetch:
@@ -40,4 +41,4 @@ Update the GitHub Info website content for Mona using current official GitHub re
 
 Use the official GitHub Blog, Changelog, and Awesome Copilot workflows pages to identify concise, practical updates that help developers learn GitHub faster. Preserve the site's existing editorial angle, cite the relevant source URLs, and update only `site/content/github-info.md` when the research supports a useful change.
 
-After editing, review the resulting diff for accuracy, concise writing, and valid Markdown. Use the `create_pull_request` safe output to open a pull request for Mona to review. Do not write directly to `main`, merge the pull request, or make unrelated changes.
+After editing, review the resulting diff for accuracy, concise writing, and valid Markdown. Use the `create_pull_request` safe output to open a pull request for Mona to review. If the research does not support a useful change, call the `noop` safe output with a brief reason instead. Do not write directly to `main`, merge the pull request, or make unrelated changes.
